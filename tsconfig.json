@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		// This can be changed to ES... when this is fixed: https://github.com/yargs/yargs/issues/2014
+		"module": "commonjs",
+		"target": "es2021",
+    "moduleResolution": "node",
+		"lib": [ "es2021", "DOM", "DOM.Iterable" ],
+		"outDir": "dist",
+		"sourceMap": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+    "esModuleInterop": true
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
