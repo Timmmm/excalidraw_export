@@ -5,11 +5,18 @@
   "scripts": {
     "compile": "node compile.mjs"
   },
-  "keywords": ["excalidraw", "export", "svg"],
+  "keywords": [
+    "excalidraw",
+    "export",
+    "svg"
+  ],
   "author": "Tim Hutt <tdhutt@gmail.com>",
   "license": "MIT",
-  "repository": { "url": "https://github.com/Timmmm/excalidraw_export" },
+  "repository": {
+    "url": "https://github.com/Timmmm/excalidraw_export"
+  },
   "dependencies": {
+    "canvas": "^2.9.3",
     "jsdom": "^20.0.0",
     "yargs": "^17.5.1"
   },
