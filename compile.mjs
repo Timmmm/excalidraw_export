@@ -13,7 +13,7 @@ const cascadia = fs.readFileSync("src/Cascadia.woff2", { encoding: "base64" });
 const virgil = fs.readFileSync("src/Virgil.woff2", { encoding: "base64" });
 
 // Note we have to use a function as the second argument because when the JS
-// people managed to finally add `.replaceAll()` the fucked it right up.
+// people managed to finally add `.replaceAll()` they fucked it right up.
 mainJs = mainJs.replaceAll("EXCALIDRAW_UTILS_SOURCE = \"\"", () => `EXCALIDRAW_UTILS_SOURCE = ${JSON.stringify(excalidrawUtils)}`);
 mainJs = mainJs.replaceAll("CASCADIA_BASE64 = \"\"", () => `CASCADIA_BASE64 = ${JSON.stringify(cascadia)}`);
 mainJs = mainJs.replaceAll("VIRGIL_BASE64 = \"\"", () => `VIRGIL_BASE64 = ${JSON.stringify(virgil)}`);
