@@ -49,3 +49,16 @@ However there is one minor snag - the actual fonts are called `Virgil GS` and `C
     <text font-family="Virgil SG, Segoe UI Emoji" ...
 
 This lets it find the system font.
+
+## Troubleshooting
+
+If you get an error like this:
+
+```
+npm ERR! ../src/Image.h:18:10: fatal error: 'gif_lib.h' file not found
+npm ERR! #include <gif_lib.h>
+npm ERR!          ^~~~~~~~~~~
+npm ERR! 1 warning and 1 error generated.
+```
+
+See [this thread](https://github.com/Automattic/node-canvas/issues/788) for suggestions.
