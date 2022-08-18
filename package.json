@@ -10,16 +10,16 @@
   "license": "MIT",
   "repository": { "url": "https://github.com/Timmmm/excalidraw_export" },
   "dependencies": {
-    "jsdom": "^19.0.0",
-    "yargs": "^17.4.0"
+    "jsdom": "^20.0.0",
+    "yargs": "^17.5.1"
   },
   "main": "dist/main.js",
   "bin": "dist/main.js",
   "devDependencies": {
     "@excalidraw/utils": "^0.1.2",
-    "@types/jsdom": "^16.2.14",
-    "@types/yargs": "^17.0.10",
-    "typescript": "^4.6.3"
+    "@types/jsdom": "^20.0.0",
+    "@types/yargs": "^17.0.11",
+    "typescript": "^4.7.4"
   },
   "type": "commonjs",
   "files": [
