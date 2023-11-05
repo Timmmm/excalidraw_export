@@ -12,13 +12,13 @@ Simplest is as follows.
 
     excalidraw_export foo.excalidraw bar.excalidraw
 
-This will create two files: `foo.excalidraw.svg` and `foo.excalidraw.svg`.
+This will create two files: `foo.excalidraw.svg` and `bar.excalidraw.svg`.
 
 If you have `rsvg-convert` installed, and you *additionally* want PDF files use
 
     excalidraw_export --pdf foo.excalidraw bar.excalidraw
 
-This will also generate `foo.excalidraw.pdf` and `foo.excalidraw.pdf`.
+This will also generate `foo.excalidraw.pdf` and `bar.excalidraw.pdf`.
 
 ## Fonts
 
@@ -38,7 +38,7 @@ Unfortunately the font situation is a bit of a mess. Excalidraw uses two fonts -
     </defs>
     <text font-family="Virgil, Segoe UI Emoji" ...
 
-This means the file is small, but now you need network access to use the fonts! Not great. So this tool provides a `--embed-fonts` option which will embed the fonts in the SVG (even if they aren't used). This increase the file size a bit (so you probably don't want to use it on the web) but it's good for e.g. HTML presentations.
+This means the file is small, but now you need network access to use the fonts! Not great. So this tool provides a `--embed-fonts` option which will embed the fonts in the SVG (even if they aren't used). This increases the file size a bit (so you probably don't want to use it on the web) but it's good for e.g. HTML presentations.
 
 Unfortunately there's a big downside of `<style> @font-face`. No SVG renderers except web browsers support CSS fonts in SVG. ImageMagick, `rsvg-convert`, Inkscape, etc. will all ignore it.
 
