@@ -82,7 +82,7 @@ async function main() {
       type: "boolean",
     })
     .option("embed_fonts", {
-      description: "Embed the fonts (even if they aren't used). This increase the size by about 200kB. It also only works for web browsers.",
+      description: "Embed the fonts (even if they aren't used). This increases the size by about 200kB. It also only works for web browsers.",
       type: "boolean",
     })
     .help().alias("help", "h")
