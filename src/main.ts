@@ -37,8 +37,8 @@ function excalidrawToSvg(diagram: string): Promise<string> {
 
 // Embed the woff fonts. Unfortunately basically only browsers support CSS fonts in SVG.
 function embedFonts(svg: string): string {
-  const virgilUri = "data:application/x-font-woff2;base64," + CASCADIA_BASE64;
-  const cascadiaUri = "data:application/x-font-woff2;base64," + VIRGIL_BASE64;
+  const virgilUri = "data:application/x-font-woff2;base64," + VIRGIL_BASE64;
+  const cascadiaUri = "data:application/x-font-woff2;base64," + CASCADIA_BASE64;
 
   // Note we have to use a function here because replaceAll() is broken.
   svg = svg.replaceAll("https://excalidraw.com/Virgil.woff2", () => virgilUri);
