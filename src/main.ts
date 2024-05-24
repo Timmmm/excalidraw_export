@@ -24,12 +24,12 @@ function excalidrawToSvg(diagram: string): Promise<string> {
     <body>
       <script>
         // mock CanvasRenderingContext2D (which currently blows up in the canvas-5-polyfill)
-	class CanvasRenderingContext2D {}
+        class CanvasRenderingContext2D {}
 
         // load canvas-5-polyfill
-	${PATH_2D_POLYFILL}
+        ${PATH_2D_POLYFILL}
 
-	// load excalidraw-utils
+        // load excalidraw-utils
         ${EXCALIDRAW_UTILS_SOURCE}
 
         async function renderSvg() {
