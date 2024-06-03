@@ -1,7 +1,7 @@
 {
   "name": "excalidraw_export",
   "description": "CLI to export Excalidraw drawings",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "compile": "node compile.mjs"
   },
