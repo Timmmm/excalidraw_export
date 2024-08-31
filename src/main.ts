@@ -12,7 +12,6 @@ import { hideBin } from "yargs/helpers";
 const EXCALIDRAW_UTILS_SOURCE = "";
 const CASCADIA_BASE64 = "";
 const VIRGIL_BASE64 = "";
-const PATH_2D_POLYFILL = "";
 
 function excalidrawToSvg(diagram: string): Promise<string> {
 
@@ -23,12 +22,6 @@ function excalidrawToSvg(diagram: string): Promise<string> {
   const exportScript = `
     <body>
       <script>
-        // mock CanvasRenderingContext2D (which currently blows up in the canvas-5-polyfill)
-        class CanvasRenderingContext2D {}
-
-        // load canvas-5-polyfill
-        ${PATH_2D_POLYFILL}
-
         // load excalidraw-utils
         ${EXCALIDRAW_UTILS_SOURCE}
 
