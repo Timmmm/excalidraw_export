@@ -16,7 +16,7 @@
     "url": "https://github.com/Timmmm/excalidraw_export"
   },
   "dependencies": {
-    "canvas-5-polyfill": "^0.1.5",
+    "canvas": "^2.11.2",
     "jsdom": "^20.0.0",
     "yargs": "^17.5.1"
   },
