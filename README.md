@@ -6,6 +6,11 @@ This is a simple Node package to export Excalidraw drawings to SVG, and optional
 
     npm install --global excalidraw_export
 
+By default `node-canvas` dependency downloads pre-built binaries, but these
+might not exist for your platform. In that case you need to install these
+(dependencies)[https://github.com/Automattic/node-canvas?tab=readme-ov-file#compiling]
+separately.
+
 ## Use
 
 Simplest is as follows.
